@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Customer Drop-off</string>
+    <string name="title_home">Scan a barcode</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home_content">Scan or enter tracking # for each pakcage: \n</string>
+</resources>

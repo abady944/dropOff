@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="scan.MainPage">
+
+    <StackLayout Orientation="Vertical" >
+
+        <!-- Place new controls here -->
+        <Label Text= "Scan or or enter tracking # for each package: "
+               HorizontalOptions="Center"
+               VerticalOptions="Center" FontAttributes="Bold" TranslationY="70" TranslationX="-33" />
+
+
+        <Entry x:Name="trackingtxt" Placeholder ="Tracking #                                           " 
+               PlaceholderColor = "Gray" Keyboard="Numeric" ReturnType="Go"
+               VerticalOptions="Center" ScaleX="1" TranslationX="-35" TranslationY="98" HorizontalOptions="CenterAndExpand"/>
+        <Button x:Name="ButtonSubmitNum" Text= "OK"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" ScaleX="1" TranslationX="146" TranslationY="41"/>
+
+
+        <Button x:Name="ButtonScanDefault" Text= "Scan" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center" TranslationX="0" TranslationY="35"/>
+
+        <ListView x:Name="trackerlist" TranslationX="20" TranslationY="50" SeparatorColor="#999999" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding .}" TextColor="Black"  />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button x:Name="ButtonNext" Text= "➜ Next" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center" ScaleX="1" TranslationX="150" TranslationY="-5" TextColor="#FFFFFF" BackgroundColor="#000000" CornerRadius="40" />
+
+
+    </StackLayout>
+
+</ContentPage>
